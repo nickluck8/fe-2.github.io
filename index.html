@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Title</title>
 </head>
 <body>
@@ -10,8 +12,8 @@
         <div class="logo">
             Your logo
         </div>
-        <div class="menu">
-            <ul>
+        <nav>
+            <ul class="menu">
                 <li><a href="#">menu item</a></li>
                 <li><a href="#">menu item</a></li>
                 <li><a href="#">menu item</a></li>
@@ -19,40 +21,314 @@
                 <li><a href="#">menu item</a></li>
                 <li><a href="#">menu item</a></li>
                 <li><a href="#">menu item</a></li>
+                <i>icon</i>
             </ul>
-        </div>
+        </nav>
     </div>
 </header>
+
 <div class="slide">
     <div class="time">
         <h1>start your project</h1>
-        <h2>
-            conference event day 2017
-        </h2>
-        <time></time>
-        <button>
-            take a tour
-        </button>
-        <button>
-            purchase
-        </button>
+        <h2>conference event day 2017</h2>
+        <hr class="blue-line">
+        <div class="counter">
+            <!--<time class="countdown" datetime="20 12:24:12">29:02:16:50</time>-->
+            <span class="countdown countdown-days">29 : </span>
+            <span class="countdown countdown-hours">02 : </span>
+            <span class="countdown countdown-minutes">16 : </span>
+            <span class="countdown countdown-seconds">50</span>
+        </div>
+        <div class="buttons">
+            <button class="tour-btn">
+                take a tour
+            </button>
+            <button class="purchase-btn">
+                purchase
+            </button>
+        </div>
     </div>
 </div>
 <div class="section2">
-    <div class="section2-left"></div>
-    <section>
-        <header>
-            <h3>
-                about out project
-            </h3>
-        </header>
-        <p>
+    <div class="section2-left">
+        <h3>about out project</h3>
+        <hr class="blue-line">
+        <p class="grey-apendix">We are here to make your dream comes true by your own way.</p>
 
-        </p>
-    </section>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+            ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis
+            autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+            feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim augue.</p>
+
+        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam
+            littera
+            gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis seacula quarta decima
+            decima sollemnes in futurum.</p>
+    </div>
+
     <div class="section2-img">
         <img src="#" alt="section2 picture">
     </div>
 </div>
+
+<div class="statistics">
+    <div>
+        <div>
+            <img src="img/time.png" class="fa-icon time-icon">
+            <p class="subject">time to PROJECT</p>
+            <p>August 30th 2017 at 7 p.m</p>
+        </div>
+        <div>
+            <img src="img/places.png" class="fa-icon place-icon">
+            <p class="subject">event place</p>
+            <p>Nobinagar Savar,Dhaka</p>
+        </div>
+        <div>
+            <img src="img/speaker.png" class="fa-icon">
+            <p class="subject">the speakers</p>
+            <p>UI/UX All Subject</p>
+        </div>
+        <div>
+            <img src="img/ticket.png" class="fa-icon">
+            <p class="subject">1000 tickets</p>
+            <p>Signup to take a place now</p>
+        </div>
+    </div>
+    <div class="video">
+        <img src="img/video.png" alt="">
+        <h2>See our project</h2>
+    </div>
+</div>
+
+<div class="brands">
+    <div class="container brand">
+        <div class="row-1">
+            <img src="img/brand-1.png">
+            <img src="img/brand-2.png">
+            <img src="img/brand-3.png">
+        </div>
+        <div class="row-2">
+            <img src="img/brand-4.png">
+            <img src="img/brand-5.png">
+            <img src="img/brand-6.png">
+        </div>
+    </div>
+</div>
+
+<div class="speakers">
+    <div class="container container-speakers">
+        <h2 class="member-title">Our member</h2>
+        <hr class="underline">
+        <div class="members">
+            <div class="member-1">
+                <img src="img/speaker-1.png">
+            </div>
+            <div class="member-2">
+                <img src="img/speaker-2.png">
+                <div class="member-data">
+                    <div class="member-info">
+                        <h3>MASUD RANA</h3>
+                        <p>CEO from Managment</p>
+                        <hr class="underline" style="background-color: #fff; margin-left: 0px; width: 30px">
+                        <img src="img/social.png" alt="social" class="social-icons">
+                    </div>
+                </div>
+            </div>
+            <div class="member-3">
+                <img src="img/speaker-3.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="schedule">
+    <div class="container">
+        <div class="schedule-head">
+            <h2>project schedule</h2>
+            <hr class="underline">
+            <div class="buttons">
+                <a href="#">DAY 1</a>
+                <a href="#" class="active-btn">DAY 2</a>
+                <a href="#">DAY 3</a>
+            </div>
+            <div class="centered-photo">
+                <img src="img/person-1.png" class="centered-photo-1" alt="">
+                <img src="img/person-2.png" class="centered-photo-2" alt="">
+                <img src="img/person-3.png" class="centered-photo-3" alt="">
+            </div>
+            <div class="schedule-main">
+                <div class="column-left">
+                    <figure>
+                        <img src="img/time-speach-1.png">
+                        <img src="img/speach-1.png">
+                        <figcaption>
+                            <h3>3 steps to start a start-up company</h3>
+                            <p>It is a long established fact that a reader will
+                                be distracted by the readable content of a page when
+                                looking at its layout. The point of using Lorem Ipsum is that it has</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/time-speach-3.png" class="time-1">
+                        <img src="img/speach-3.png">
+                        <figcaption>
+                            <h3>how to connect people</h3>
+                            <p>It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout.
+                                The point of using Lorem Ipsum is that it has</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="column-right">
+                    <figure>
+                        <img src="img/time-speach-2.png" class='time-2'>
+                        <img src="img/speach-2.png">
+                        <figcaption>
+                            <h3>some tip for your trouble</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="schedule-btn">
+                <a href="#">GO TO NEXT DAY</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="purchase">
+    <div class="container buy-block">
+        <p>hurry up. the ticket is free with limitted amount!!!</p>
+        <div class="signup">
+            <a href="#">signup now</a>
+        </div>
+    </div>
+</div>
+
+<div class="blog">
+    <div class="container container-blog">
+        <h2>Our blog</h2>
+        <hr class="underline">
+        <div class="blog-block">
+            <figure>
+                <img src="img/blog-picture.png" alt="">
+                <figcaption style="width: 370px;">
+                    <img src="img/time-line.png" alt="" class="time-line">
+                    <img src="img/user-line.png" alt="" class="user-line">
+                    <h3>we are back. nice to see you soon</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/blog-picture.png" alt="">
+                <figcaption style="width: 370px;">
+                    <img src="img/time-line.png" alt="" class="time-line">
+                    <img src="img/user-line.png" alt="" class="user-line">
+                    <h3>we are back. nice to see you soon</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/blog-picture.png" alt="">
+                <figcaption style="width: 370px;">
+                    <img src="img/time-line.png" alt="" class="time-line">
+                    <img src="img/user-line.png" alt="" class="user-line">
+                    <h3>we are back. nice to see you soon</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="booking">
+    <div class="container form-block">
+        <div class="booking-img">
+            <img src="img/booking-img.png" alt="">
+        </div>
+        <div class="booking-form">
+
+            <h2>book a seat now</h2>
+            <hr class="underline underline-in-form">
+
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that i</p>
+            <form class="myForm">
+                <div class="row-inputs">
+                    <input type="text" name="name" placeholder="Your name *" required>
+                    <input type="email" name="email" placeholder="Your email *" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject *" required>
+                <textarea name="message" placeholder="Message *" required></textarea>
+                <input type="submit" name="" value="Send message">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="maps">
+    <img src="img/maps.png" alt="">
+</div>
+
+<footer>
+    <div class="content-footer">
+        <div class="col col-1">
+            <h3>about two PROJECT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna erat volutpat</p>
+            <div class="social-icon">
+                <p><i class="fas fa-map-marker-alt"></i>Nobinagar Savar DHAKA</p>
+                <p><a href="tel:+88 01928737807"><i class="fas fa-phone"></i> +88 01928737807</a><a
+                        href="tel:+88 01777418373">+88 01777418373</a></p>
+
+                <p><i class="far fa-envelope"></i> <a href="mailto:quickmasud@gmail.com" class="email-address">quickmasud@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="col col-2">
+            <h3>Support</h3>
+            <p>Visit to Forum</p>
+            <p>Ticket Support</p>
+            <p>Send us an</p>
+            <p>F.A.Qs</p>
+            <p>Our policy</p>
+        </div>
+        <div class="col col-3">
+            <h3>Information</h3>
+            <p>About us</p>
+            <p>Careers</p>
+            <p>F.A.Qs</p>
+            <p>Terms&Conitions</p>
+            <p>Our blog</p>
+        </div>
+        <div class="col col-4">
+            <h3>Newsletter</h3>
+            <p>Signup to receive our interesting news. We never send spam!</p>
+            <input type="email" name="email-sub" placeholder="Your email *" required>
+            <a href="#">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="rights">
+        <p>All Right Reserved. Designed by Masud Rana</p>
+        <div class="social-fas">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

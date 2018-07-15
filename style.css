@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu i {
+    /*background-image: url("img/background-main.png");*/
+}
+
+.menu {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(248, 244, 244);
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 0 0 10px;
+    color: #000;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    border: 1px solid blue;
+    background-color: blue;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide {
+    background-image: url("img/background-main.png");
+    height: 769px;
+    text-align: center;
+}
+
+.blue-line {
+    width: 70px;
+    text-align: center;
+    background-color: #29cadf;
+    height: 3px;
+    border: none;
+}
+
+h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: -15px;
+}
+
+.slide h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.time {
+    padding-top: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.counter{
+    margin-top: 50px;
+    /*width: 629px;*/
+    text-align: center;
+}
+
+.counter > span{
+    font-size: 60px;
+    position: relative;
+}
+
+/*.countdown{*/
+    /*display: block;*/
+    /*text-transform: uppercase;*/
+    /*position: absolute;*/
+    /*color: #FFFFFF;*/
+    /*font-size: 14px;*/
+    /*font-weight: 200;*/
+/*}*/
+
+.countdown-days:after {
+    content: 'days';
+    display: block;
+    text-transform: uppercase;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 200;
+    left: 20px;
+}
+.countdown-hours:after {
+    content: 'hours';
+    display: block;
+    text-transform: uppercase;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 200;
+    left: 10px;
+}
+.countdown-minutes:after {
+    content: 'mins';
+    display: block;
+    text-transform: uppercase;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 200;
+    left: 10px;
+}
+.countdown-seconds:after {
+    content: 'secs';
+    display: block;
+    text-transform: uppercase;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 200;
+    left: 10px;
+}
+
+.buttons {
+    margin: 56px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 333px;
+
+}
+
+.tour-btn,
+.purchase-btn {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 0.938em;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #fff;
+}
+
+.tour-btn:hover,
+.purchase-btn:hover{
+    background-color: #03a9f4;
+    border: 1px solid #03a9f4;
+}
