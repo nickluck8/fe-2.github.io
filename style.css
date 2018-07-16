@@ -5,12 +5,15 @@ body {
     overflow-x: hidden;
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
+    margin: 0 90px;
+    height: 114px;
 }
 
 .menu i {
@@ -22,27 +25,34 @@ body {
     display: flex;
     justify-content: space-between;
     color: rgb(248, 244, 244);
+    font-size: 20px;
+
 }
 
-.menu li {
+.menu li, i {
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0 15px;
     list-style: none;
 }
+
+/*menu a{*/
+
+    /*border: 3px solid white;*/
+/*}*/
 
 .logo {
     font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 10px 0 0 10px;
+    margin-top: 10px;
     color: #000;
     font-weight: 600;
 }
 
 .menu a:hover {
-    border: 1px solid blue;
-    background-color: blue;
+    /*border: 3px solid #03a9f4;*/
+    background-color: #03a9f4;
 }
 
 .menu a {
@@ -51,16 +61,17 @@ body {
 }
 
 .slide {
-    background-image: url("img/background-main.png");
+    background: url("img/background-main.png") no-repeat;
+    background-size: cover;
     height: 769px;
     text-align: center;
 }
 
 .blue-line {
-    width: 70px;
+    width: 60px;
     text-align: center;
     background-color: #29cadf;
-    height: 3px;
+    height: 2px;
     border: none;
 }
 
@@ -235,9 +246,10 @@ h1 {
 
 .video {
     position: absolute;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     top: 370px;
-    left: 70px;
 }
 
 .video h2 {
@@ -373,7 +385,7 @@ h1 {
 
 .schedule-btns a:hover {
     /*border: 1px solid #eaeaea;*/
-    background-color: #eaeaea;
+    background-color: #03a9f4;
 }
 
 .centered-photo {
@@ -386,7 +398,7 @@ h1 {
     justify-content: center;
 }
 
-.column-left {
+.schedule-col-left {
     width: 50%;
     height: 1560px;
     border-right: 3px solid #eaeaea;
@@ -402,7 +414,7 @@ h1 {
 /*left: -20px;*/
 /*z-index: 10;*/
 /*}*/
-.column-left figure,
+.schedule-col-left figure,
 .schedule-col-right figure {
     margin: 100px auto;
     position: relative;
@@ -414,15 +426,15 @@ h1 {
 
 .time-1 {
     position: absolute;
-    top: -20px;
-    left: -20px;
+    top: 0;
+    left: 0;
     z-index: 10;
 }
 
 .time-2 {
     position: absolute;
-    top: -20px;
-    right: -20px;
+    top: 0;
+    right: 0;
     z-index: 10;
 }
 
@@ -455,27 +467,29 @@ h1 {
     justify-content: center;
 }
 
-.schedule-btn {
+.schedule-btn{
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
 }
 
-.column-left img:first-child,
+.schedule-col-left img:first-child,
 .time-1 {
     position: absolute;
-    top: -20px;
-    left: -20px;
+    top: 0;
+    left: 0;
     z-index: 10;
 }
 
 .purchase {
     height: 150px;
-    background: url('../img/purchase.png') no-repeat center top / cover;
+    background: url('img/purchase.png') no-repeat;
+    background-size: cover;
 }
 
 .signup a,
-.schedule-btn a {
+.schedule-btn a,
+input[name='submit'] {
     background-color: #03a9f4;
     font-size: 13px;
     color: #FFFFFF;
@@ -508,14 +522,20 @@ figcaption p {
 
 .buy-block {
     display: flex;
-    justify-content: center;
-    padding-top: 50px;
+    justify-content: space-between;
+    padding-top: 40px;
     align-items: center;
+    margin: 0 70px;
+}
+
+.signup a:hover{
+    opacity: 0.5;
 }
 
 .buy-block p {
     text-transform: uppercase;
     font-size: 20px;
+    color: white;
 }
 
 .schedule-header h2 {
@@ -523,8 +543,9 @@ figcaption p {
 }
 
 .blog {
-    height: 746px;
+    height: auto;
     text-align: center;
+    /*margin: 40px auto;*/
 }
 
 .blog h2 {
@@ -533,6 +554,10 @@ figcaption p {
 
 .booking-form {
     padding: 100px;
+}
+
+.booking-form h2{
+    text-transform: uppercase;
 }
 
 .blog-in,
@@ -551,32 +576,38 @@ input[name='name'],
 input[name='subject'] {
     padding: 15px 15px;
     font-size: 12px;
-    border: 1px solid blue;
-    margin-bottom: 2px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 10px;
 }
 
-/*.form-n-m{*/
-/*width: 106%;*/
-/*}*/
+.form-n-m{
+    display: flex;
+    justify-content: space-between;
+}
 
 .form {
-    width: 90%;
+    /*width: 90%;*/
 }
 
 input[name='email'] {
-    float: right;
+    /*float: right;*/
 }
 
 input[name='subject'] {
-    width: 94%;
+    width: 100%;
+}
+
+input[name='submit']{
+border: none;
+    margin-top: 20px;
 }
 
 form textarea {
     height: 160px;
-    width: 94%;
+    width: 100%;
     padding: 15px;
     font-size: 12px;
-    border: 1px solid blue;
+    border: 1px solid #f1f1f1;
 }
 
 .booking {
@@ -588,40 +619,11 @@ form textarea {
     line-height: 2;
 }
 
-.maps {
+.map {
     margin-top: -60px;
-}
-
-.content-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 65px;
-    /* height: 200px;*/
-    color: #8f8f8f;
-
-}
-
-footer {
     width: 100%;
-    height: 400px;
-    margin-top: -10px;
-    margin-bottom: 50px;
-    background-color: #333333;
 }
 
-.foot-cols{
-    display: flex;
-    justify-content: space-between;
-}
-
-.content-footer p,
-.content-footer a {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 12px;
-    color: #8f8f8f;
-    font-weight: 300;
-    line-height: 1.6;
-    letter-spacing: 0.7px;
-    text-decoration: none;
+.map img{
+    width: 100%;
 }
