@@ -95,9 +95,11 @@ h1 {
 }
 
 .counter {
-    margin-top: 50px;
     /*width: 629px;*/
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30%;
 }
 
 .counter > span {
